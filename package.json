@@ -1,0 +1,29 @@
+{
+  "name": "cakephp-jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knight9999/CakePHP-Jasmine.git"
+  },
+  "author": "knaito",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knight9999/CakePHP-Jasmine/issues"
+  },
+  "homepage": "https://github.com/knight9999/CakePHP-Jasmine#readme",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.2",
+    "jasmine-ajax": "^3.2.0",
+    "jasmine-core": "^2.4.1",
+    "jasmine-jquery": "^2.1.1",
+    "merge-stream": "^1.0.0"
+  }
+
+}

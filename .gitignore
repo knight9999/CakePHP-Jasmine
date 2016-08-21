@@ -1,6 +1,8 @@
 !.gitkeep
+node_modules
 Plugin/
 Vendor/
 tmp/
 Config/database.php
 Config/email.php
+webroot/js
