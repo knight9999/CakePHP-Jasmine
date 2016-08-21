@@ -1,7 +1,8 @@
 {
     "name": "cakeweb1-app",
     "require": {
-        "cakephp/cakephp": "2.8.6"
+        "cakephp/cakephp": "2.8.6",
+        "cakephp/debug_kit": "2.2.6"
     },
     "config": {
         "vendor-dir": "Vendor/"
