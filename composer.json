@@ -1,0 +1,9 @@
+{
+    "name": "cakeweb1-app",
+    "require": {
+        "cakephp/cakephp": "2.8.6"
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
+}
