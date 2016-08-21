@@ -4,12 +4,12 @@ Hello World!
 
   <div id="result"></div>
 
-  <button onClick="callApiItems(2);">callApiItems</button>
+  <button onClick="callApiItems(1);">callApiItems</button>
 
   <p></p>
   <p></p>
 
-  <a href="/pages/test.html">テスト</a>
+  <a href="/test/test.html">テスト</a>
 
 </body>
 </html>
