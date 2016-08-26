@@ -1,7 +1,7 @@
 define ['callApiItems'], (callApiItems)->
 
 
-  describe 'callApiItems with real HTML DOM Test', ()->
+  describe '■自前で結果を受け取るDOMを作成し、MockのAjaxをテストする', ()->
 
     beforeEach ()->
       $('body').append('<div id="result">xxx</div>')
@@ -45,7 +45,7 @@ define ['callApiItems'], (callApiItems)->
       beforeEach (done)->
         data 		= JSON.stringify( "key":"value-mock02" )
         response 	= { "status": 200, "contentType": 'text/json', "responseText": data }
-        jasmine.Ajax.stubRequest( '/api/ajax01.json' ).andReturn( response )
+        jasmine.Ajax.stubRequest( '/api/items/1' ).andReturn( response )
         onSuccess = jasmine.createSpy('onSuccess')
         onFailure = jasmine.createSpy('onFailure')
         callApiItems(1,  onSuccess, onFailure )
@@ -64,7 +64,7 @@ define ['callApiItems'], (callApiItems)->
     return
 
 
-  describe 'callApiItems with Fixture Controller Test', ()->
+  describe '■FixturesControllerによりFixtureを生成し、それを使ってMockのAjaxをテストする', ()->
 
     beforeEach ()->
       loadFixtures('dummy')
@@ -107,7 +107,7 @@ define ['callApiItems'], (callApiItems)->
       beforeEach (done)->
         data 		= JSON.stringify( "key":"value-mock02" )
         response 	= { "status": 200, "contentType": 'text/json', "responseText": data }
-        jasmine.Ajax.stubRequest( '/api/ajax01.json' ).andReturn( response )
+        jasmine.Ajax.stubRequest( '/api/items/1' ).andReturn( response )
         onSuccess = jasmine.createSpy('onSuccess')
         onFailure = jasmine.createSpy('onFailure')
         callApiItems(1, onSuccess, onFailure )
@@ -125,7 +125,7 @@ define ['callApiItems'], (callApiItems)->
 
     return
 
-  describe 'Real callApiItems with real HTML DOM Test', ()->
+  describe '■自前で結果を受け取るDOMを作成し、Ajaxを実際に動作させてテストする', ()->
     onSuccess = null
     onFailure = null
 
